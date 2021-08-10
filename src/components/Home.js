@@ -7,7 +7,7 @@ import ToastMessagejQuery from "react-toastr/lib/components/ToastMessage/ToastMe
 
  
  class Home extends Component{
-      notify = (name) => toast.success(`Item added to cart`);
+      notify = (name) => toast(`Item added to cart`);
     handleClick = (id,name)=>{
         this.props.addToCart(id); 
         this.notify(name);
